@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52rem;
+}
+
+/* utils */
+
+.container {
+  width: 90%;
+  /* margin: auto; */
+}
+main {
+  min-height: 80vh;
+}
+/* section-1 styles */
+.section-1 {
+  background-color: rgb(247, 244, 244);
+  /* width: 50%;
+  margin: auto; */
+  padding: 1.4rem;
+  min-height: 42vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-family: "Karla", sans-serif;
+  /* font-weight: 700; */
+}
+.section-1 h2 {
+  color: hsl(179, 62%, 43%);
+}
+.section-1 h3 {
+  color: hsl(71, 73%, 54%);
+}
+.section-1 h4 {
+  color: hsl(218, 22%, 67%);
+  line-height: 2rem;
+}
+
+/* section-2 styles */
+.section-2 button {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  height: 3rem;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  font-family: "Karla", sans-serif;
+}
+.card-1 {
+  background-color: hsl(179, 62%, 43%);
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 16rem;
+  font-family: "Karla", sans-serif;
+}
+
+.card-1 h2 {
+  color: white;
+}
+.card-1-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 56%;
+}
+.card-1-inner h3 {
+  color: white;
+  font-size: 2.5rem;
+}
+.card-1-inner p {
+  color: hsl(204, 43%, 93%);
+}
+.card-1 h4 {
+  color: rgb(237, 233, 233);
+  font-size: 1.1rem;
+}
+
+/* card-2 */
+.card-2 {
+  background-color: hsl(180, 59%, 48%);
+  padding: 1.4rem;
+  font-family: "Karla", sans-serif;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  /* height: 50%; */
+}
+.card-2 h2 {
+  color: white;
+}
+.card-2 p {
+  width: 70%;
+  margin-top: 2rem;
+  color: rgb(251, 248, 248);
+  /* line-height: 1.5rem; */
+}
+
+@media (min-width: 1024px) {
+  body {
+    height: 36rem;
+  }
+  main {
+    min-height: 50vh;
+  }
+  /* .section-1 */
+  .section-1 {
+    background-color: rgb(247, 244, 244);
+    padding: 1.4rem;
+    min-height: 24vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .section-1 h4 {
+    color: hsl(218, 22%, 67%);
+    line-height: 1rem;
+  }
+  .container {
+    width: 40%;
+  }
+  .section-2 {
+    display: flex;
+  }
+  .card-1 {
+    width: 52%;
+  }
+  .card-2 {
+    width: 48%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .card-2 p {
+    line-height: 1.2rem;
+    width: 85%;
+
+  }
+
+}
